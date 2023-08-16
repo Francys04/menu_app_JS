@@ -2,7 +2,6 @@
 //iterate over categories return buttons
 //make toslect buttons when they are available
 
-
 //items
 const menu = [
   {

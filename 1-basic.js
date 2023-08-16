@@ -1,3 +1,5 @@
+//An array called menu holds objects, each representing a menu item. Each object contains properties like id,
+// title, category, price, img, and desc, which store information about the menu items.
 const menu = [
   {
     id: 1,
@@ -73,9 +75,18 @@ const menu = [
   },
 ];
 
+//he code selects an HTML element with the class "section-center" 
+//using the querySelector method. This element will be used to display the menu items.
+
 const sectionCenter = document.querySelector(".section-center");
 
+//An event listener is added to the window object, listening for the "DOMContentLoaded" event.
+// This event fires when the initial HTML document has been completely loaded and parsed.
+//Inside the event listener function, the code uses the map function to iterate through each 
+//menu item object in the menu array. For each item, a string of HTML markup is generated using template literals. 
+//This markup includes the item's image, title, price, and description.
 window.addEventListener("DOMContentLoaded", function () {
+  //The generated HTML markup for each menu item is stored in the displayMenu array.
   let displayMenu = menu.map(function (item) {
     // console.log(item);
 
@@ -92,6 +103,8 @@ window.addEventListener("DOMContentLoaded", function () {
           </div>
         </article>`;
   });
+  //The inner HTML of the selected "section-center" element is updated with the displayMenu string. 
+  //This effectively inserts the generated HTML markup into the webpage, displaying the menu items.
   displayMenu = displayMenu.join("");
   console.log(displayMenu);
 
