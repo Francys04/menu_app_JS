@@ -28,7 +28,7 @@ Before running the application, ensure you have a web browser installed on your 
 ### 5. Installation
 - Clone the repository:
 Copy code
-git clone 
+git clone https://github.com/Francys04/menu_app_JS
 
 ### 6. Usage
 - Viewing Menu Items
